@@ -96,7 +96,6 @@ class Game
         int foodCounter = 0;
         int externalConter = 0;
 
-        Coordinate *getRandomNumberCoordinate();
         void restart();
         void generateFood();
         void turnSnake(Direction direction);
@@ -154,23 +153,6 @@ class Painter
         Painter(int size, RenderWindow *win);
         ~Painter();
 };
-
-
-/*
-class Background
-{
-    private:
-
-        Texture background;
-        Texture foodBack;
-        Sprite bg(background);
-        Sprite fb(foodBack);
-
-    public:
-
-        void draw();
-};
-*/
 
 
 class Mode
